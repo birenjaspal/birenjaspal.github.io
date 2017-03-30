@@ -1,0 +1,63 @@
+body {
+  background-color: black;
+}
+
+h1 {
+  color: white;
+  padding: 0px;
+  margin: 0px;
+}
+
+.banner {
+  padding: 10px; height: 10px;
+  border: 1px solid "clear";
+  background-color: black;
+  margin: auto 0;
+}
+
+.placementboard {
+  padding: 10px; height: 60px;
+  border: 1px solid "clear";
+  background-color: black;
+  margin: auto 0;
+}
+
+.board {
+  padding: 5px;
+  height: 360px;
+  width: 400px;
+  border: 1px solid "clear";
+}
+
+.placement {
+  /*overflow: hidden;*/
+  /*line-height: 250px;*/
+  /*padding: 0px;*/
+  /*margin: 0px;*/
+  /*vertical-align: middle;
+  text-align: center;*/
+  display: inline-block;
+  background-color: rgba(50, 50, 50, 0.7);
+  height: 50px;
+  width: 50px;
+  border: 1px solid rgba(50, 50, 50, 0.7);
+  border-radius: 50%;
+}
+
+
+.square {
+  overflow: hidden;
+  line-height: 250px;
+  padding: 0px;
+  margin: 0px auto;
+  font-size: 5px;
+  vertical-align: middle;
+  text-align: center;
+  color: black;
+  display: inline-block;
+  background-color: grey;
+  height: 50px;
+  width: 50px;
+  border: 1px solid grey;
+  border-radius: 50%;
+}
