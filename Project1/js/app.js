@@ -138,6 +138,7 @@ $(function(){
   var $ClearBoardBtn = $('#ClearBoardBtn');
   var $DizzyBoardBtn = $('#DizzyBoardBtn');
   var $ColorRandomizerBoardBtn = $("#ColorRandomizerBoardBtn");
+  var $InstructionsBtn = $("#InstructionsBtn");
 
   //set event handler
   var ClearBoardFunction = function(){
@@ -189,9 +190,14 @@ $(function(){
     countertwo++;
   }
 
+  var InstructionsFunction = function(){
+    alert("               ***Extreme Connect 4 - Instructions***\nObjective: The objective of this game is to get four chips of the same color in a row (diagonally, vertically, or horizontally).  The first player to do so wins.\n\nHow to play: Players alternate turns, by clicking one of the seven positions towards the bottom of the screen.  Each position represents a corresponding column on the board.  The first player to obtain four in a row of their corresponding color wins.  In the unlikely event that the board is full without a winner, the game ends in a draw.\n\nExtreme Version: In this extreme variant of the classic game, a player may elect to forgo their turn by enabling/disabling the Dizzy or Color Randomizer feature.  Both of these features add visual complexity to the game but do not alter the actual positions of the chips in play.  Should a player attempt to place a chip in a full column, that players turn is skipped and they may be ridiculed.  Arrow keys may be used to reorient the board, but only after a player hails to the developer of this fun and mildly addictive game.");
+  }
+
 
   //set event listener
   $ClearBoardBtn.on("click", ClearBoardFunction);
   $DizzyBoardBtn.on("click", DizzyBoardFunction);
   $ColorRandomizerBoardBtn.on("click", ColorRandomizerBoardFunction);
+  $InstructionsBtn.on("click", InstructionsFunction);
 })
