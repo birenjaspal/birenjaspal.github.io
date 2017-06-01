@@ -26,8 +26,10 @@ body {
 img {
     text-align: center;
     display: block;
+    max-width: 100%;
     margin: auto;
-    width: 40%;
+    height: auto;
+    width: auto;
 }
 
 
