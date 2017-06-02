@@ -120,5 +120,7 @@ i:hover {
 
 svg {
   max-height: 215px;
-  width: 400px;
+  width: 200px;
+  padding: 10px;
+  margin: 0 auto;
 }
