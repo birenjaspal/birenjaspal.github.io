@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+#container {
+  font-family: 'Avenir Next', 'Poppins', sans-serif;
+
+  position: fixed;
+  background-color: #F4F4F4;
+
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-direction: column;
+  flex-direction: column;
+
+  -webkit-align-items: center;
+  align-items: center;
+
+  -webkit-justify-content: center;
+  justify-content: center;
+
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+#name {
+  font-size: 18px;
+  font-style: normal;
+  color: #373737;
+}
+
+#center-box{
+  height: 200px;
+  width: 400px;
+  position: relative;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-moz-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-o-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.lid {
+  stroke-dasharray: 3936.615234375;
+  stroke-dashoffset: 3936.615234375;
+  animation: dash 10s linear forwards;
+  height: 100%;
+  width: 100%;
+}
+
+nav{
+  max-width: 550px;
+  width: 80%;
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 0;
+}
+
+li {
+  color: #373737;
+  list-style-type: none;
+  padding: 10px;
+}
+
+li:hover {
+  color: #C0B283;
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+  color: #373737;
+}
+
+a:hover {
+  color: #C0B283;
+}
+
+#display-section {
+  margin: 40px;
+}
+
+#about-me {
+  width: 80%;
+}
+
+i {
+  color: #373737;
+}
+
+i:hover {
+  color: #C0B283;
+}
+
+svg {
+  max-height: 215px;
+  width: 400px;
+}
