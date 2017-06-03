@@ -146,7 +146,7 @@ li {
 }
 
 li:hover {
-  color: #C0B283;
+  color: #3AC295;
   cursor: pointer;
 }
 
@@ -156,23 +156,16 @@ a{
 }
 
 a:hover {
-  color: #C0B283;
+  color: #3AC295;
 }
 
-#display-section {
-  margin: 40px;
-}
-
-#about-me {
-  width: 80%;
-}
 
 i {
   color: #373737;
 }
 
 i:hover {
-  color: #C0B283;
+  color: #3AC295;
 }
 
 svg {
