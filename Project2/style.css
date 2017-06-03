@@ -1,32 +1,32 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
 
-
-#container {
-  font-family: 'Avenir Next', 'Poppins', sans-serif;
-
-  position: fixed;
-  background-color: #F4F4F4;
-
-  display: -webkit-flex;
-  display: flex;
-
-  -webkit-flex-direction: column;
-  flex-direction: column;
-
-  -webkit-align-items: center;
-  align-items: center;
-
-  -webkit-justify-content: center;
-  justify-content: center;
+.row-container {
 
   height: 100%;
   width: 100%;
-  top: 0;
-  left: 0;
+  background-color: #F4F4F4;
+  display: flex;
+
+/*useful reference: http://www.sketchingwithcss.com/samplechapter/cheatsheet.html*/
+  display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+}
+/** {
+  border: 1px solid red;
+}*/
+body {
+    background-color: #F4F4F4;
+    align-items: center;
+    width: 100%
 }
 
 #name {
-  font-size: 18px;
+  font-size: 40px;
   font-style: normal;
   color: #373737;
 }
@@ -61,31 +61,88 @@
   }
 }
 
+.animated {
+    margin: 0 auto;
+        -webkit-animation-duration: 10s;
+        animation-duration: 10s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+
+     }
+
+     @-webkit-keyframes bounceInRight {
+       margin: 0 auto;
+        0% {
+           opacity: 0;
+           -webkit-transform: translateX(0px);
+        }
+        60% {
+           opacity: 1;
+           -webkit-transform: translateX(0px);
+        }
+        80% {
+           -webkit-transform: translateX(0px);
+        }
+        100% {
+           -webkit-transform: translateX(0px);
+        }
+     }
+
+     @keyframes bounceInRight {
+
+
+        0% {
+           opacity: 0;
+           transform: translateX(1000px);
+        }
+        60% {
+           opacity: 1;
+           transform: translateX(-15px);
+        }
+        80% {
+           transform: translateX(0px);
+        }
+        100% {
+           transform: translateX(0px);
+        }
+     }
+
+     .bounceInRight {
+       margin: 0 auto;
+        -webkit-animation-name: bounceInRight;
+        animation-name: bounceInRight;
+        display: flex;
+          align-items: center;
+     }
+
+
 .lid {
   stroke-dasharray: 3936.615234375;
   stroke-dashoffset: 3936.615234375;
   animation: dash 10s linear forwards;
   height: 100%;
-  width: 100%;
 }
 
-nav{
-  max-width: 550px;
-  width: 80%;
-}
+/*nav{
+width: 100%;
+	float: left;
+	margin: 0 0 1em 0;
+	padding: 0;
+}*/
 
 ul{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  padding-left: 0;
+  padding: 0px;
 }
 
 li {
   color: #373737;
   list-style-type: none;
   padding: 10px;
+    align-items: center;
 }
 
 li:hover {
@@ -120,7 +177,6 @@ i:hover {
 
 svg {
   max-height: 215px;
-  width: 200px;
-  padding: 10px;
-  margin: 0 auto;
+  width: 100px;
+  margin: 0;
 }
